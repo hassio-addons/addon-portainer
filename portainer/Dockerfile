@@ -18,7 +18,7 @@ RUN \
     && mkdir /opt \
     \
     && curl -L -s \
-        "https://github.com/portainer/portainer/releases/download/1.19.2/portainer-1.19.2-linux-amd64.tar.gz" \
+        "https://github.com/portainer/portainer/releases/download/1.19.2/portainer-1.19.2-linux-${ARCH}.tar.gz" \
         | tar zxvf - -C /opt/
 
 # Build arugments
