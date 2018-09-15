@@ -12,7 +12,8 @@
     "armhf"
   ],
   "map": [
-    "config"
+    "config",
+    "ssl"
   ],
   "ports": {
     "9000/tcp": 9000
