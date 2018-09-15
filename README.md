@@ -29,6 +29,13 @@ It has never been so easy to manage Docker. Portainer provides a detailed
 overview of Docker and allows you to manage containers, images, networks and
 volumes.
 
+## WARNING
+
+The Portainer add-on is really powerful and gives you virtually access to
+your whole system. While this add-on is created and maintained with care and
+with security in mind, in the wrong or inexperienced hands,
+it could damage your system.
+
 ## Installation
 
 The installation of this add-on is pretty straightforward and not different in
