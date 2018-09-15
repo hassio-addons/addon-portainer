@@ -107,8 +107,7 @@ The private key file to use for SSL.
 ### Option: `leave_front_door_open`
 
 Adding this option to the add-on configuration allows you to disable
-authentication by setting it to `true` and leaving the username
-and password empty.
+authentication by setting it to `true`.
 
 **Note**: _We STRONGLY suggest, not to use this, even if this add-on is
 only exposed to your internal network. USE AT YOUR OWN RISK!_
