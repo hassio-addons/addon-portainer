@@ -1,0 +1,32 @@
+#!/usr/bin/with-contenv bash
+# ==============================================================================
+# Community Hass.io Add-ons: Portainer
+# Runs portainer
+# ==============================================================================
+# shellcheck disable=SC1091
+source /usr/lib/hassio-addons/base.sh
+
+declare -a options
+
+hass.log.info 'Starting Portainer'
+
+options+=(--data /data)
+options+=(--bind :9000)
+options+=(--template-file /opt/portainer/templates.json)
+options+=(--no-analytics)
+options+=(--host unix:///var/run/docker.sock)
+
+# Add SSL, when enabled.
+if hass.config.true 'ssl'; then
+    options+=(--ssl)
+    options+=(--sslcert "/ssl/$(hass.config.get 'certfile')")
+    options+=(--sslkey "/ssl/$(hass.config.get 'keyfile')")
+fi
+
+# Leave front door open
+if hass.config.true 'leave_front_door_open'; then
+    options+=(--no-auth)
+fi
+
+# Run Portainer
+exec /opt/portainer/portainer "${options[@]}"
