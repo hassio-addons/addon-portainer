@@ -4,6 +4,7 @@
   "slug": "portainer",
   "description": "Manage your Docker environment with ease",
   "url": "https://community.home-assistant.io/?u=frenck",
+  "webui": "[PROTO:ssl]://[HOST]:[PORT:9000]",
   "startup": "services",
   "arch": [
     "aarch64",
