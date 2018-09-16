@@ -138,10 +138,10 @@ Example configuration:
 
 ```yaml
 panel_iframe:
-  octobox:
+  portainer:
     title: Portainer
     icon: mdi:docker
-    url: http://addres.to.your.hass.io:9000
+    url: https://addres.to.your.hass.io:9000
 ```
 
 ## Changelog & Releases
