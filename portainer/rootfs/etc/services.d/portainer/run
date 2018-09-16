@@ -23,6 +23,16 @@ if hass.config.true 'ssl'; then
     options+=(--sslkey "/ssl/$(hass.config.get 'keyfile')")
 fi
 
+# Hide Hassio containers by default
+if hass.config.true 'hide_hassio_containers'; then
+    # shellcheck disable=SC2191
+    options+=(--hide-label io.hass.type=supervisor)
+    # shellcheck disable=SC2191
+    options+=(--hide-label io.hass.type=homeassistant)
+    # shellcheck disable=SC2191
+    options+=(--hide-label io.hass.type=addon)
+fi
+
 # Leave front door open
 if hass.config.true 'leave_front_door_open'; then
     options+=(--no-auth)

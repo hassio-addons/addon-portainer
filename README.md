@@ -111,6 +111,14 @@ The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is the default for Hass.io_
 
+### Option: `hide_hassio_containers`
+
+By default all Hassio managed containers are hidden from Portainer.
+This is recommended since fooling around with Hassio managed containers
+can easily lead to a broken system.
+
+Set this option to `false`, to gain access to Hassio managed containers as well.
+
 ### Option: `leave_front_door_open`
 
 Adding this option to the add-on configuration allows you to disable
