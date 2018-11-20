@@ -42,7 +42,7 @@ The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Hass.io add-on.
 
 To be able to use this add-on, you'll need to disable protection mode on this
-add-on. Without it, the add-on is unable to acccess Docker.
+add-on. Without it, the add-on is unable to access Docker.
 
 1. [Add our Hass.io add-ons repository][repository] to your Hass.io instance.
 1. Install the "Portainer" add-on.
