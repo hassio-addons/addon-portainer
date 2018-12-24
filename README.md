@@ -121,7 +121,8 @@ By default all Hassio managed containers are hidden from Portainer.
 This is recommended since fooling around with Hassio managed containers
 can easily lead to a broken system.
 
-Set this option to `false`, to gain access to Hassio managed containers as well.
+1. Set this option to `false`, to gain access to Hassio managed containers as well.
+2. Go into Portainer -> Settings -> Hidden containers: Delete the listed hidden labels (io.hass.type labels).
 
 ### Option: `leave_front_door_open`
 
