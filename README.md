@@ -116,12 +116,14 @@ The private key file to use for SSL.
 
 ### Option: `hide_hassio_containers`
 
-By default all Hassio managed containers are hidden from Portainer.
-This is recommended since fooling around with Hassio managed containers
+By default all Hass.io managed containers are hidden from Portainer.
+This is recommended since fooling around with Hass.io managed containers
 can easily lead to a broken system.
 
-1. Set this option to `false`, to gain access to Hassio managed containers as well.
-2. Go into Portainer -> Settings -> Hidden containers: Delete the listed hidden labels (io.hass.type labels).
+1. Set this option to `false`, to gain access to Hass.io managed containers as
+   well.
+1. Go into Portainer -> Settings -> Hidden containers:
+   Delete the listed hidden labels (io.hass.type labels).
 
 ### Option: `leave_front_door_open`
 
