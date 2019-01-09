@@ -21,7 +21,7 @@ RUN \
         "https://github.com/portainer/portainer/releases/download/1.19.2/portainer-1.19.2-linux-${ARCH}.tar.gz" \
         | tar zxvf - -C /opt/
 
-# Build arugments
+# Build arguments
 ARG BUILD_DATE
 ARG BUILD_REF
 ARG BUILD_VERSION
