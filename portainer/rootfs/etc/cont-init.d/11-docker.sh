@@ -32,7 +32,7 @@ hass.log.fatal ""
 hass.log.fatal "Access to Docker allows you to do really powerful things"
 hass.log.fatal "including complete destruction of your system."
 hass.log.fatal "Please, be sure you know what you are doing before enabling"
-hass.log.fatal "this feature (and thus add-on)!"
+hass.log.fatal "this feature (and this add-on)!"
 hass.log.fatal ""
 
 exit "${EX_NOK}"
