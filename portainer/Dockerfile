@@ -16,8 +16,6 @@ RUN \
     && if [ "${BUILD_ARCH}" = "armv7" ]; then ARCH="arm"; fi \
     && if [ "${BUILD_ARCH}" = "amd64" ]; then ARCH="amd64"; fi \
     \
-    && mkdir /opt \
-    \
     && curl -L -s \
         "https://github.com/portainer/portainer/releases/download/1.20.2/portainer-1.20.2-linux-${ARCH}.tar.gz" \
         | tar zxvf - -C /opt/
