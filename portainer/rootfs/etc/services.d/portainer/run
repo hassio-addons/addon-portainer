@@ -1,14 +1,11 @@
-#!/usr/bin/with-contenv bash
+#!/usr/bin/with-contenv bashio
 # ==============================================================================
 # Community Hass.io Add-ons: Portainer
 # Runs portainer
 # ==============================================================================
-# shellcheck disable=SC1091
-source /usr/lib/hassio-addons/base.sh
-
 declare -a options
 
-hass.log.info 'Starting Portainer'
+bashio::log.info 'Starting Portainer...'
 
 options+=(--data /data)
 options+=(--bind :9000)
@@ -17,14 +14,14 @@ options+=(--no-analytics)
 options+=(--host unix:///var/run/docker.sock)
 
 # Add SSL, when enabled.
-if hass.config.true 'ssl'; then
+if bashio::config.true 'ssl'; then
     options+=(--ssl)
-    options+=(--sslcert "/ssl/$(hass.config.get 'certfile')")
-    options+=(--sslkey "/ssl/$(hass.config.get 'keyfile')")
+    options+=(--sslcert "/ssl/$(bashio::config 'certfile')")
+    options+=(--sslkey "/ssl/$(bashio::config 'keyfile')")
 fi
 
 # Hide Hassio containers by default
-if hass.config.true 'hide_hassio_containers'; then
+if bashio::config.true 'hide_hassio_containers'; then
     # shellcheck disable=SC2191
     options+=(--hide-label io.hass.type=supervisor)
     # shellcheck disable=SC2191
@@ -34,7 +31,7 @@ if hass.config.true 'hide_hassio_containers'; then
 fi
 
 # Leave front door open
-if hass.config.true 'leave_front_door_open'; then
+if bashio::config.true 'leave_front_door_open'; then
     options+=(--no-auth)
 fi
 
