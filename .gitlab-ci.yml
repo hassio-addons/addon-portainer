@@ -6,6 +6,7 @@ variables:
   ADDON_SLUG: "portainer"
   ADDON_TARGET: "portainer"
 
+  ADDON_LEGACY_TAGS: "true"
   ADDON_I386: "false"
 
   ADDON_AARCH64_BASE: "hassioaddons/base-aarch64:3.0.1"
