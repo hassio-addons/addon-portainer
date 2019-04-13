@@ -5,6 +5,8 @@
   "description": "Manage your Docker environment with ease",
   "url": "https://github.com/hassio-addons/addon-portainer",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:9000]",
+  "ingress": true,
+  "ingress_port": 1337,
   "startup": "services",
   "arch": [
     "aarch64",
@@ -17,11 +19,15 @@
     "ssl"
   ],
   "ports": {
-    "9000/tcp": 9000
+    "80/tcp": null
+  },
+  "ports_description": {
+    "80/tcp": "Web interface (Not required for Hass.io Ingress)"
   },
   "boot": "auto",
   "hassio_api": true,
   "hassio_role": "default",
+  "auth_api": true,
   "docker_api": true,
   "options": {
     "ssl": true,

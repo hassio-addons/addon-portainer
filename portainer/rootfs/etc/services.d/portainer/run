@@ -8,17 +8,12 @@ declare -a options
 bashio::log.info 'Starting Portainer...'
 
 options+=(--data /data)
-options+=(--bind :9000)
+options+=(--bind 127.0.0.1:9000)
+options+=(--no-auth)
 options+=(--template-file /opt/portainer/templates.json)
 options+=(--no-analytics)
 options+=(--host unix:///var/run/docker.sock)
 
-# Add SSL, when enabled.
-if bashio::config.true 'ssl'; then
-    options+=(--ssl)
-    options+=(--sslcert "/ssl/$(bashio::config 'certfile')")
-    options+=(--sslkey "/ssl/$(bashio::config 'keyfile')")
-fi
 
 # Hide Hassio containers by default
 if bashio::config.true 'hide_hassio_containers'; then
@@ -28,11 +23,7 @@ if bashio::config.true 'hide_hassio_containers'; then
     options+=(--hide-label io.hass.type=homeassistant)
     # shellcheck disable=SC2191
     options+=(--hide-label io.hass.type=addon)
-fi
 
-# Leave front door open
-if bashio::config.true 'leave_front_door_open'; then
-    options+=(--no-auth)
 fi
 
 # Run Portainer

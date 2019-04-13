@@ -1,7 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
 # Community Hass.io Add-ons: Portainer
-# This files check if all user configuration requirements are met
+# Runs some initializations for Portainer
 # ==============================================================================
-bashio::config.require.ssl
 bashio::require.unprotected
