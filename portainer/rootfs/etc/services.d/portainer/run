@@ -14,9 +14,8 @@ options+=(--template-file /opt/portainer/templates.json)
 options+=(--no-analytics)
 options+=(--host unix:///var/run/docker.sock)
 
-
-# Hide Hassio containers by default
-if bashio::config.true 'hide_hassio_containers'; then
+# Hide Hassio containers by default, but only eforce on first run
+if ! bashio::fs.file_exists "/data/hidden"; then
     # shellcheck disable=SC2191
     options+=(--hide-label io.hass.type=supervisor)
     # shellcheck disable=SC2191
@@ -24,6 +23,7 @@ if bashio::config.true 'hide_hassio_containers'; then
     # shellcheck disable=SC2191
     options+=(--hide-label io.hass.type=addon)
 
+    touch /data/hidden
 fi
 
 # Run Portainer
