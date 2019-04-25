@@ -8,6 +8,7 @@
   "ingress": true,
   "ingress_port": 1337,
   "startup": "services",
+  "panel_icon": "mdi:docker",
   "homeassistant": "0.92.0b2",
   "arch": [
     "aarch64",
