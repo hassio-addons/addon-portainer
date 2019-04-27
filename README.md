@@ -28,7 +28,7 @@ Manage your Docker environment with ease.
 ## About
 
 Portainer is an open-source lightweight management UI which allows you to
-easily manage your a Docker host(s) or Docker swarm clusters.
+easily manage a Docker host(s) or Docker swarm clusters.
 
 It has never been so easy to manage Docker. Portainer provides a detailed
 overview of Docker and allows you to manage containers, images, networks and
@@ -36,15 +36,14 @@ volumes.
 
 ## WARNING
 
-The Portainer add-on is really powerful and gives you virtually access to
+The Portainer add-on is really powerful and gives you access to virtually
 your whole system. While this add-on is created and maintained with care and
 with security in mind, in the wrong or inexperienced hands,
 it could damage your system.
 
 ## Installation
 
-The installation of this add-on is pretty straightforward and not different in
-comparison to installing any other Hass.io add-on.
+The installation of this add-on is pretty straightforward and no different compared to installing any other Hass.io add-on.
 
 To be able to use this add-on, you'll need to disable protection mode on this
 add-on. Without it, the add-on is unable to access Docker.
@@ -53,7 +52,7 @@ add-on. Without it, the add-on is unable to access Docker.
 1. Install the "Portainer" add-on.
 1. Set the "Protection mode" switch to off.
 1. Start the "Portainer" add-on.
-1. Check the logs of the "Portainer" to see if everything went well.
+1. Check the logs of the "Portainer" add-on to see if everything went well.
 
 **NOTE**: Do not add this repository to Hass.io, please use:
 `https://github.com/hassio-addons/repository`.
