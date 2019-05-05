@@ -43,7 +43,8 @@ it could damage your system.
 
 ## Installation
 
-The installation of this add-on is pretty straightforward and no different compared to installing any other Hass.io add-on.
+The installation of this add-on is pretty straightforward and no different
+compared to installing any other Hass.io add-on.
 
 To be able to use this add-on, you'll need to disable protection mode on this
 add-on. Without it, the add-on is unable to access Docker.
