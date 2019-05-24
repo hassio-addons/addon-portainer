@@ -9,7 +9,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 ARG BUILD_ARCH=amd64
 RUN \
     apk add --no-cache \
-        lua-resty-http=0.12-r1 \
+        lua-resty-http=0.13-r0 \
         nginx-mod-http-lua=1.14.2-r0 \
         nginx=1.14.2-r0 \
     \
