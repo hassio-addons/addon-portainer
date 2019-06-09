@@ -126,7 +126,7 @@ can easily lead to a broken system.
 
 This is only enforced on the first run. Access to these containers can
 be gained by going into Portainer -> Settings -> Hidden containers.
-Then felete the listed hidden labels (io.hass.type labels).
+Then delete the listed hidden labels (io.hass.type labels).
 **Only do this if you know what you're doing!**
 
 ## Changelog & Releases
