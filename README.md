@@ -120,9 +120,6 @@ only exposed to your internal network. USE AT YOUR OWN RISK!_
 
 ## Known issues and limitations
 
-
-### Option: `hide_hassio_containers`
-
 By default all Hass.io managed containers are hidden from Portainer.
 This is recommended since fooling around with Hass.io managed containers
 can easily lead to a broken system.
@@ -130,7 +127,7 @@ can easily lead to a broken system.
 This is only enforced on the first run. Access to these containers can
 be gained by going into Portainer -> Settings -> Hidden containers.
 Then felete the listed hidden labels (io.hass.type labels).
-Only do this if you know what you're doing!
+**Only do this if you know what you're doing!**
 
 ## Changelog & Releases
 
