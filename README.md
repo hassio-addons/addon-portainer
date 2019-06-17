@@ -118,6 +118,16 @@ authentication by setting it to `true`.
 **Note**: _We STRONGLY suggest, not to use this, even if this add-on is
 only exposed to your internal network. USE AT YOUR OWN RISK!_
 
+## Known issues and limitations
+
+By default all Hass.io managed containers are hidden from Portainer.
+This is recommended since fooling around with Hass.io managed containers
+can easily lead to a broken system.
+
+Access to these containers can be gained by going into Portainer ->
+Settings -> Hidden containers. Then delete the listed hidden labels
+(io.hass.type labels). **Only do this if you know what you're doing!**
+
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]
