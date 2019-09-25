@@ -17,7 +17,6 @@
     "armv7"
   ],
   "map": [
-    "config",
     "ssl"
   ],
   "ports": {
