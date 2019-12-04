@@ -19,7 +19,7 @@ RUN \
     && if [ "${BUILD_ARCH}" = "amd64" ]; then ARCH="amd64"; fi \
     \
     && curl -L -s \
-        "https://github.com/portainer/portainer/releases/download/1.22.2/portainer-1.22.2-linux-${ARCH}.tar.gz" \
+        "https://github.com/portainer/portainer/releases/download/1.23.0/portainer-1.23.0-linux-${ARCH}.tar.gz" \
         | tar zxvf - -C /opt/ \
     \
     && rm -fr \
