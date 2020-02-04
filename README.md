@@ -105,6 +105,10 @@ The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is the default_
 
+### Option: `agentsecret`
+
+An option to set a shared agent secret. Must also be set in the remote agent as an Environment variable.
+
 ### Option: `leave_front_door_open`
 
 Adding this option to the add-on configuration allows you to disable
