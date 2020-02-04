@@ -5,9 +5,9 @@
 # ==============================================================================
 declare -a options
 
-if bashio::config.has_value 'agentsecret' ; then
+if bashio::config.has_value 'agent_secret' ; then
     bashio::log.info 'Setting the Agent Secret'
-    export AGENT_SECRET=$(bashio::config 'agentsecret')
+    export AGENT_SECRET=$(bashio::config 'agent_secret')
 fi
 
 bashio::log.info 'Starting Portainer...'
