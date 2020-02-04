@@ -105,7 +105,7 @@ The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is the default_
 
-### Option: `agentsecret`
+### Option: `agent_secret`
 
 An option to set a shared agent secret. Must also be set in the remote agent as an Environment variable.
 
