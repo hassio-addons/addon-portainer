@@ -24,7 +24,7 @@
     "8000/tcp": null
   },
   "ports_description": {
-    "80/tcp": "Web interface (Not required for Hass.io Ingress)",
+    "80/tcp": "Web interface (Not required for Ingress)",
     "8000/tcp": "Edge Agent Api (Enable when managing remote edge agents)"
   },
   "boot": "auto",

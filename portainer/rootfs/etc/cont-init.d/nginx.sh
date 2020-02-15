@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: Portainer
+# Home Assistant Community Add-on: Portainer
 # Configures NGINX
 # ==============================================================================
 declare certfile

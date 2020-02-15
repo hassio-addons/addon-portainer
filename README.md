@@ -1,4 +1,4 @@
-# Community Hass.io Add-ons: Portainer
+# Home Assistant Community Add-on: Portainer
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
@@ -44,12 +44,13 @@ it could damage your system.
 ## Installation
 
 The installation of this add-on is pretty straightforward and no different
-compared to installing any other Hass.io add-on.
+compared to installing any other Home Assistant add-on.
 
 To be able to use this add-on, you'll need to disable protection mode on this
 add-on. Without it, the add-on is unable to access Docker.
 
-1. Search for the "Portainer" add-on in the Hass.io add-on store and install it.
+1. Search for the "Portainer" add-on in the Supervisor add-on store and
+   install it.
 1. Set the "Protection mode" switch to off.
 1. Start the "Portainer" add-on.
 1. Check the logs of the "Portainer" add-on to see if everything went well.
@@ -96,13 +97,13 @@ Set it `true` to enable it, `false` otherwise.
 
 The certificate file to use for SSL.
 
-**Note**: _The file MUST be stored in `/ssl/`, which is the default for Hass.io_
+**Note**: _The file MUST be stored in `/ssl/`, which is the default_
 
 ### Option: `keyfile`
 
 The private key file to use for SSL.
 
-**Note**: _The file MUST be stored in `/ssl/`, which is the default for Hass.io_
+**Note**: _The file MUST be stored in `/ssl/`, which is the default_
 
 ### Option: `leave_front_door_open`
 
@@ -142,7 +143,7 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Community Hass.io Add-ons Discord chat server][discord] for add-on
+- The [Home Assistant Community Add-ons Discord chat server][discord] for add-on
   support and feature requests.
 - The [Home Assistant Discord chat server][discord-ha] for general Home
   Assistant discussions and questions.
@@ -168,11 +169,11 @@ The original setup of this repository is by [Franck Nijhof][frenck].
 For a full list of all authors and contributors,
 check [the contributor's page][contributors].
 
-## We have got some Hass.io add-ons for you
+## We have got some Home Assistant add-ons for you
 
-Want some more functionality to your Hass.io Home Assistant instance?
+Want some more functionality to your Home Assistant instance?
 
-We have created multiple add-ons for Hass.io. For a full list, check out
+We have created multiple add-ons for Home Assistant. For a full list, check out
 our [GitHub Repository][repository].
 
 ## License

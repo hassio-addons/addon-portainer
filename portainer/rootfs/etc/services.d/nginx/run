@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: AdGuard Home
+# Home Assistant Community Add-on: AdGuard Home
 # Runs the Nginx daemon
 # ==============================================================================
 
