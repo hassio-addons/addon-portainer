@@ -60,13 +60,11 @@ add-on. Without it, the add-on is unable to access Docker.
 
 Example add-on configuration:
 
-```json
-{
-    "log_level": "info",
-    "ssl": true,
-    "certfile": "fullchain.pem",
-    "keyfile": "privkey.pem"
-}
+```yaml
+log_level: info
+ssl: true
+certfile: fullchain.pem
+keyfile: privkey.pem
 ```
 
 **Note**: _This is just an example, don't copy and paste it! Create your own!_
