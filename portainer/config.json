@@ -35,6 +35,7 @@
     "ssl": "bool",
     "certfile": "str",
     "keyfile": "str",
+    "agent_secret": "str",
     "leave_front_door_open": "bool?"
   }
 }
