@@ -93,8 +93,8 @@ as an Environment variable.
 
 ## Known issues and limitations
 
-By default all Hass.io managed containers are hidden from Portainer.
-This is recommended since fooling around with Hass.io managed containers
+By default all Home Assistant managed containers are hidden from Portainer.
+This is recommended since fooling around with Home Assistant managed containers
 can easily lead to a broken system.
 
 Access to these containers can be gained by going into Portainer ->
