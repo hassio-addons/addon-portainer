@@ -8,22 +8,14 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Setup base
 ARG BUILD_ARCH=amd64
 RUN \
-    apk add --no-cache \
-        lua-resty-http=0.15-r0 \
-        nginx-mod-http-lua=1.16.1-r6 \
-        nginx=1.16.1-r6 \
-    \
-    && if [ "${BUILD_ARCH}" = "aarch64" ]; then ARCH="arm64"; fi \
+    if [ "${BUILD_ARCH}" = "aarch64" ]; then ARCH="arm64"; fi \
     && if [ "${BUILD_ARCH}" = "armhf" ]; then ARCH="arm"; fi \
     && if [ "${BUILD_ARCH}" = "armv7" ]; then ARCH="arm"; fi \
     && if [ "${BUILD_ARCH}" = "amd64" ]; then ARCH="amd64"; fi \
     \
     && curl -L -s \
         "https://github.com/portainer/portainer/releases/download/1.23.1/portainer-1.23.1-linux-${ARCH}.tar.gz" \
-        | tar zxvf - -C /opt/ \
-    \
-    && rm -fr \
-        /etc/nginx
+        | tar zxvf - -C /opt/
 
 # Copy root filesystem
 COPY rootfs /

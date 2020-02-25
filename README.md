@@ -63,9 +63,7 @@ Example add-on configuration:
 
 ```yaml
 log_level: info
-ssl: true
-certfile: fullchain.pem
-keyfile: privkey.pem
+agent_secret: password
 ```
 
 **Note**: _This is just an example, don't copy and paste it! Create your own!_
@@ -88,35 +86,10 @@ more severe level, e.g., `debug` also shows `info` messages. By default,
 the `log_level` is set to `info`, which is the recommended setting unless
 you are troubleshooting.
 
-### Option: `ssl`
-
-Enables/Disables SSL (HTTPS) on the web interface.
-Set it `true` to enable it, `false` otherwise.
-
-### Option: `certfile`
-
-The certificate file to use for SSL.
-
-**Note**: _The file MUST be stored in `/ssl/`, which is the default_
-
-### Option: `keyfile`
-
-The private key file to use for SSL.
-
-**Note**: _The file MUST be stored in `/ssl/`, which is the default_
-
 ### Option: `agent_secret`
 
 An option to set a shared agent secret. Must also be set in the remote agent
 as an Environment variable.
-
-### Option: `leave_front_door_open`
-
-Adding this option to the add-on configuration allows you to disable
-authentication by setting it to `true`.
-
-**Note**: _We STRONGLY suggest, not to use this, even if this add-on is
-only exposed to your internal network. USE AT YOUR OWN RISK!_
 
 ## Known issues and limitations
 
