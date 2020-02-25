@@ -107,7 +107,8 @@ The private key file to use for SSL.
 
 ### Option: `agent_secret`
 
-An option to set a shared agent secret. Must also be set in the remote agent as an Environment variable.
+An option to set a shared agent secret. Must also be set in the remote agent
+as an Environment variable.
 
 ### Option: `leave_front_door_open`
 
