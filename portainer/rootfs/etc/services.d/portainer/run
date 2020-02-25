@@ -4,6 +4,7 @@
 # Runs portainer
 # ==============================================================================
 declare -a options
+export AGENT_SECRET
 
 bashio::log.info 'Starting Portainer...'
 
@@ -26,6 +27,11 @@ if ! bashio::fs.file_exists "/data/hidden"; then
     options+=(--hide-label io.hass.type=dns)
 
     touch /data/hidden
+fi
+
+# Export agent secret, if defined
+if bashio::config.has_value 'agent_secret' ; then
+    AGENT_SECRET=$(bashio::config 'agent_secret')
 fi
 
 # Run Portainer
