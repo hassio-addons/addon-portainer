@@ -29,6 +29,8 @@ if ! bashio::fs.file_exists "/data/hidden"; then
     options+=(--hide-label io.hass.type=cli)
     # shellcheck disable=SC2191
     options+=(--hide-label io.hass.type=dns)
+    # shellcheck disable=SC2191
+    options+=(--hide-label io.hass.type=multicast)
 
     touch /data/hidden
 fi
