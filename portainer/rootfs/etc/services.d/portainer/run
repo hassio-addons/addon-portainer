@@ -22,6 +22,8 @@ if ! bashio::fs.file_exists "/data/hidden"; then
     # shellcheck disable=SC2191
     options+=(--hide-label io.hass.type=homeassistant)
     # shellcheck disable=SC2191
+    options+=(--hide-label io.hass.type=core)
+    # shellcheck disable=SC2191
     options+=(--hide-label io.hass.type=addon)
     # shellcheck disable=SC2191
     options+=(--hide-label io.hass.type=audio)
