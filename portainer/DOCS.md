@@ -16,8 +16,9 @@ it could damage your system.
 
 ## Installation
 
-The installation of this add-on is pretty straightforward and no different
-compared to installing any other Home Assistant add-on.
+To install this add-on, you'll first need to go to your profile and turn on 
+"Advanced Mode", once that is done go back to Home Assistant add-ons and search 
+for "Portainer" and install it as you would any other add-on.
 
 To be able to use this add-on, you'll need to disable protection mode on this
 add-on. Without it, the add-on is unable to access Docker.
