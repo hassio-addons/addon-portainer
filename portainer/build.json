@@ -4,6 +4,5 @@
     "amd64": "hassioaddons/base-amd64:8.0.5",
     "armhf": "hassioaddons/base-armhf:8.0.5",
     "armv7": "hassioaddons/base-armv7:8.0.5"
-  },
-  "args": {}
+  }
 }
