@@ -19,11 +19,8 @@
   "ports_description": {
     "8000/tcp": "Edge Agent Api (Enable when managing remote edge agents)"
   },
-  "boot": "auto",
   "hassio_api": true,
-  "hassio_role": "default",
   "docker_api": true,
-  "options": {},
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
     "agent_secret": "str?"
