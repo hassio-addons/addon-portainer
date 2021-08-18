@@ -9,37 +9,8 @@ export AGENT_SECRET
 bashio::log.info 'Starting Portainer...'
 
 options+=(--data /data)
-options+=(--bind 0.0.0.0:1337)
-options+=(--no-auth)
-options+=(--template-file /opt/portainer/templates.json)
-options+=(--no-analytics)
+options+=(--bind 0.0.0.0:8099)
 options+=(--host unix:///var/run/docker.sock)
-
-# Hide Hassio containers by default, but only eforce on first run
-if ! bashio::fs.file_exists "/data/hidden"; then
-    # shellcheck disable=SC2191
-    options+=(--hide-label io.hass.type=supervisor)
-    # shellcheck disable=SC2191
-    options+=(--hide-label io.hass.type=homeassistant)
-    # shellcheck disable=SC2191
-    options+=(--hide-label io.hass.type=base)
-    # shellcheck disable=SC2191
-    options+=(--hide-label io.hass.type=core)
-    # shellcheck disable=SC2191
-    options+=(--hide-label io.hass.type=addon)
-    # shellcheck disable=SC2191
-    options+=(--hide-label io.hass.type=audio)
-    # shellcheck disable=SC2191
-    options+=(--hide-label io.hass.type=cli)
-    # shellcheck disable=SC2191
-    options+=(--hide-label io.hass.type=dns)
-    # shellcheck disable=SC2191
-    options+=(--hide-label io.hass.type=multicast)
-    # shellcheck disable=SC2191
-    options+=(--hide-label io.hass.type=observer)
-
-    touch /data/hidden
-fi
 
 # Export agent secret, if defined
 if bashio::config.has_value 'agent_secret' ; then

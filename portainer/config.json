@@ -6,14 +6,11 @@
   "url": "https://github.com/hassio-addons/addon-portainer",
   "advanced": true,
   "ingress": true,
-  "ingress_port": 1337,
   "ingress_stream": true,
   "startup": "services",
   "panel_icon": "mdi:docker",
-  "homeassistant": "0.92.0b2",
   "arch": ["aarch64", "amd64", "armhf", "armv7"],
   "init": false,
-  "map": ["ssl"],
   "ports": {
     "8000/tcp": null
   },
