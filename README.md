@@ -36,12 +36,22 @@ volumes.
 
 [:books: Read the full add-on documentation][docs]
 
-## WARNING
+## WARNING 1
 
 The Portainer add-on is really powerful and gives you access to virtually
 your whole system. While this add-on is created and maintained with care and
 with security in mind, in the wrong or inexperienced hands,
 it could damage your system.
+
+## WARNING 2
+
+The Portainer add-on is meant for debugging Home Assistant and its containers.
+It has not meant or designed for managing or deploying your custom software
+or third-party containers.
+
+**Home Assistant DOES NOT SUPPORT running third party containers**
+on Home Assistant OS or Supervised installation types. Ignoring this, will
+render your system as unsupported!
 
 ## Support
 
