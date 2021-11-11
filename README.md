@@ -36,6 +36,18 @@ volumes.
 
 [:books: Read the full add-on documentation][docs]
 
+
+## DISCONTINUED
+
+This add-on is no longer available.
+
+It has been used quite a lot for unsupported porposes, causing many issues,
+support questions and other problems.
+
+If you run Home Assistant, please be aware that running additional containers
+is not a supported use-case and will trigger your system to be flagged
+as unsupported as well.
+
 ## WARNING 1
 
 The Portainer add-on is really powerful and gives you access to virtually
@@ -140,7 +152,7 @@ SOFTWARE.
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2021.svg
 [patreon-shield]: https://frenck.dev/wp-content/uploads/2019/12/patreon.png
 [patreon]: https://www.patreon.com/frenck
-[project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-%20!%20DEPRECATED%20%20%20!-ff0000.svg
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-portainer.svg
 [releases]: https://github.com/hassio-addons/addon-portainer/releases
